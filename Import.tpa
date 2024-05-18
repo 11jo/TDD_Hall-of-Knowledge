@@ -1,0 +1,138 @@
+
+
+			ACTION_IF (NOT DIRECTORY_EXISTS ~weidu_external/TDD_Hall-of-Knowledge/DATA~) BEGIN
+		MKDIR ~weidu_external/TDD_Hall-of-Knowledge/DATA~
+			END
+			
+			
+			ACTION_IF (NOT FILE_EXISTS ~weidu_external/TDD_Hall-of-Knowledge/DATA/Portrait/AVAUNL.bmp~) BEGIN
+COPY ~TDD/MOS/AVAUNL.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/Portrait/AVAUNL.bmp~
+COPY ~TDD/MOS/AVAUNS.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/Portrait/AVAUNS.bmp~
+
+
+COPY ~TDD/BAF/AVAUNIS.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/AVAUNIS.BAF~
+
+COPY ~TDD/CRE/AVAUN9.cre~			~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/AVAUN9.cre~
+     ~TDD/CRE/AVAUN11.cre~			~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/AVAUN11.cre~
+     ~TDD/CRE/AVAUN13.cre~			~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/AVAUN13.cre~
+  
+COPY ~TDD/D/AVAUNIS.D~			~weidu_external/TDD_Hall-of-Knowledge/DATA/D/AVAUNIS.D~
+COPY ~TDD/D/AVAUNISJ.D~			~weidu_external/TDD_Hall-of-Knowledge/DATA/D/AVAUNISJ.D~
+COPY ~TDD/D/AVAUNISP.D~			~weidu_external/TDD_Hall-of-Knowledge/DATA/D/AVAUNISP.D~
+
+COPY ~TDD/CRE/DDHALL01.cre~			~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/DDHALL01.cre~
+
+COPY ~TDD/D/DDHALL01.D~			~weidu_external/TDD_Hall-of-Knowledge/DATA/D/DDHALL01.D~
+COPY ~TDD/D/DDHALL02.D~			~weidu_external/TDD_Hall-of-Knowledge/DATA/D/DDHALL02.D~
+COPY ~TDD/D/DDHALL03.D~			~weidu_external/TDD_Hall-of-Knowledge/DATA/D/DDHALL03.D~
+
+COPY ~TDD/BAF/DDHALL01.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/DDHALL01.BAF~
+COPY ~TDD/BAF/DDHALL02.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/DDHALL02.BAF~
+
+COPY ~TDD/CRE/PSIDARK1.cre~			~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSIDARK1.cre~
+  
+COPY ~TDD/D/PSIDARK1.D~			~weidu_external/TDD_Hall-of-Knowledge/DATA/D/PSIDARK1.D~
+
+COPY ~TDD/CRE/PSIDARK2.cre~			~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSIDARK2.cre~
+     ~TDD/CRE/PSIDARK3.cre~			~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSIDARK3.cre~
+  
+COPY ~TDD/BAF/PSIDARK.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSIDARK.BAF~
+
+COPY ~TDD/CRE/PSION1.cre~           ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSION1.cre~
+     ~TDD/CRE/PSION2.cre~           ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSION2.cre~
+
+COPY ~TDD/CRE/PSION3.cre~           ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSION3.cre~
+     ~TDD/CRE/PSION4.cre~           ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSION4.cre~
+  
+COPY ~TDD/BAF/PSICUT01.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSICUT01.BAF~
+COPY ~TDD/BAF/PSICUT02.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSICUT02.BAF~
+COPY ~TDD/BAF/PSICUT03.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSICUT03.BAF~
+COPY ~TDD/BAF/PSICUT04.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSICUT04.BAF~
+COPY ~TDD/BAF/PSI1.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSI1.BAF~
+COPY ~TDD/BAF/PSION3.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSION3.BAF~
+COPY ~TDD/BAF/PSION4.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSION4.BAF~
+	
+COPY ~TDD/D/PSION3.D~			~weidu_external/TDD_Hall-of-Knowledge/DATA/D/PSION3.D~
+COPY ~TDD/D/PSION4.D~			~weidu_external/TDD_Hall-of-Knowledge/DATA/D/PSION4.D~
+
+COPY ~TDD/BAF/DD3603.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/DD3603.BAF~
+
+COPY ~TDD/ARE/DD3603.are~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3603.are~
+COPY ~TDD/WED/DD3603.wed~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3603.wed~
+COPY ~TDD/MOS/DD3603.mos~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3603.mos~
+COPY ~TDD/MOS/DD3603SR.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3603SR.bmp~
+COPY ~TDD/MOS/DD3603HT.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3603HT.bmp~
+COPY ~TDD/MOS/DD3603LM.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3603LM.bmp~
+
+COPY ~TDD/BAF/DD6303.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/DD6303.BAF~ // Used or not used... ?
+		
+// DD3602.are
+
+COPY ~TDD/BAF/DD3602.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/DD3602.BAF~
+
+COPY ~TDD/ARE/DD3602.are~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3602.are~
+COPY ~TDD/WED/DD3602.wed~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3602.wed~
+COPY ~TDD/MOS/DD3602.mos~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3602.mos~
+COPY ~TDD/MOS/DD3602SR.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3602SR.bmp~
+COPY ~TDD/MOS/DD3602HT.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3602HT.bmp~
+COPY ~TDD/MOS/DD3602LM.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3602LM.bmp~
+		
+// DD1401.are
+
+COPY ~TDD/BAF/DD1401.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/DD1401.BAF~
+
+COPY ~TDD/ARE/DD1401.are~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD1401.are~
+COPY ~TDD/WED/DD1401.wed~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD1401.wed~
+COPY ~TDD/MOS/DD1401.mos~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD1401.mos~
+COPY ~TDD/MOS/DD1401SR.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD1401SR.bmp~
+COPY ~TDD/MOS/DD1401HT.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD1401HT.bmp~
+COPY ~TDD/MOS/DD1401LM.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD1401LM.bmp~
+ 
+/////////////////////////////////////////////////////////////////////////////
+ 
+COPY ~TDD/CRE/PSICERE.cre~          ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSICERE.cre~
+
+COPY ~TDD/CRE/PSIWAR1.cre~          ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSIWAR1.cre~
+     ~TDD/CRE/PSIWAR2.cre~          ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSIWAR2.cre~
+     ~TDD/CRE/PSIWAR3.cre~          ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSIWAR3.cre~
+
+COPY ~TDD/BAF/PSICERE1.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSICERE1.BAF~
+COPY ~TDD/BAF/PSICERE.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSICERE.BAF~
+  
+ 
+/////////////////////////////////////////////////////////////////////////////
+  
+COPY ~TDD/ITM/CEREHAND.itm~         ~weidu_external/TDD_Hall-of-Knowledge/DATA/ITM/CEREHAND.itm~     
+  
+COPY ~TDD/ITM/DARKHAND.itm~         ~weidu_external/TDD_Hall-of-Knowledge/DATA/ITM/DARKHAND.itm~
+
+
+COPY ~TDD/ITM/KATANACR.itm~         ~weidu_external/TDD_Hall-of-Knowledge/DATA/ITM/KATANACR.itm~
+
+
+COPY ~TDD/ITM/RINGPSI.itm~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ITM/RINGPSI.itm~
+
+COPY ~TDD/ITM/DEADBKX.itm~          ~weidu_external/TDD_Hall-of-Knowledge/DATA/ITM/DEADBKX.itm~
+
+// DD5000.are
+
+COPY ~TDD/BAF/DD5000.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/DD5000.BAF~
+
+COPY ~TDD/ARE/DD5000.are~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD5000.are~
+COPY ~TDD/WED/DD5000.wed~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD5000.wed~
+COPY ~TDD/MOS/DD5000.mos~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD5000.mos~
+COPY ~TDD/MOS/DD5000SR.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD5000SR.bmp~
+COPY ~TDD/MOS/DD5000HT.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD5000HT.bmp~
+COPY ~TDD/MOS/DD5000LM.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD5000LM.bmp~
+	
+// DD0012.are
+
+COPY ~TDD/BAF/DD0012.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/DD0012.BAF~
+
+COPY ~TDD/ARE/DD0012.are~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD0012.are~
+COPY ~TDD/MOS/DD0012.mos~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD0012.mos~
+COPY ~TDD/MOS/DD0012SR.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD0012SR.bmp~
+COPY ~TDD/MOS/DD0012HT.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD0012HT.bmp~
+COPY ~TDD/MOS/DD0012LM.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD0012LM.bmp~
+
+			END

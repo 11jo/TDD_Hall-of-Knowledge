@@ -9,6 +9,11 @@ README ~~
 
 ALWAYS
 
+
+		    INCLUDE ~TDD_Hall-of-Knowledge/Import.tpa~
+			
+			
+
     //Copies tra files into the autotra-folder (to leave the originals untouched)
     DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
       COPY ~TDD/Language/english~				~weidu_external/TDD_Hall-of-Knowledge/Language/autotra/%LANGUAGE%~
@@ -76,22 +81,22 @@ LANGUAGE ~Spanish(Clan REO)~
 BEGIN ~TDD Hall of Knowledge, mini quest and NPC~
 DESIGNATED 0
 LABEL ~TDD-XXXX-XXXX_X~
-REQUIRE_PREDICATE (MOD_IS_INSTALLED ~TDDZ.tp2~ 0) ~Require TDDz~	
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~TDDZ.tp2~ 0) ~Require TDDz~
 
 	 
 /////////////////////////////////////////////////////////////////////////////
 
 // Npc AVAUnis
 
-COPY ~TDD/MOS/AVAUNL.bmp~			~override~
-COPY ~TDD/MOS/AVAUNS.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/Portrait/AVAUNL.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/Portrait/AVAUNS.bmp~			~override~
 
 
-		COMPILE ~TDD/BAF/AVAUNIS.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/AVAUNIS.BAF~			~override~
 
-COPY ~TDD/CRE/AVAUN9.cre~           ~override~   //override - to catch immediate Kit Pack installation
-     ~TDD/CRE/AVAUN11.cre~          ~override~
-     ~TDD/CRE/AVAUN13.cre~          ~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/AVAUN9.cre~           ~override~   //override - to catch immediate Kit Pack installation
+     ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/AVAUN11.cre~          ~override~
+     ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/AVAUN13.cre~          ~override~
 	SAY NAME1 @20136 
 	SAY NAME2 @20136 
 	SAY 0xa8 @20137 
@@ -124,9 +129,9 @@ COPY ~TDD/CRE/AVAUN9.cre~           ~override~   //override - to catch immediate
 	SAY 0x1ac ~~ [HMTW034]
 	SAY 0x1cc @20165
   
-			COMPILE ~TDD/D/AVAUNIS.D~			~override~
-			COMPILE ~TDD/D/AVAUNISJ.D~			~override~
-			COMPILE ~TDD/D/AVAUNISP.D~			~override~
+			COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/D/AVAUNIS.D~			~override~
+			COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/D/AVAUNISJ.D~			~override~
+			COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/D/AVAUNISP.D~			~override~
   
   
   APPEND ~PDIALOG.2DA~
@@ -134,49 +139,49 @@ COPY ~TDD/CRE/AVAUN9.cre~           ~override~   //override - to catch immediate
 
 /////////////////////////////////////////////////////////////////////////////
 
-COPY ~TDD/CRE/DDHALL01.cre~         ~override~       
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/DDHALL01.cre~         ~override~       
 	SAY NAME1 @20247
 	SAY NAME2 @20247 
 
-			COMPILE ~TDD/D/DDHALL01.D~			~override~
-			COMPILE ~TDD/D/DDHALL02.D~			~override~
-			COMPILE ~TDD/D/DDHALL03.D~			~override~
-		COMPILE ~TDD/BAF/DDHALL01.BAF~			~override~
-		COMPILE ~TDD/BAF/DDHALL02.BAF~			~override~
+			COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/D/DDHALL01.D~			~override~
+			COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/D/DDHALL02.D~			~override~
+			COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/D/DDHALL03.D~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/DDHALL01.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/DDHALL02.BAF~			~override~
 
-COPY ~TDD/CRE/PSIDARK1.cre~         ~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSIDARK1.cre~         ~override~
 	SAY NAME1 @20401
 	SAY NAME2 @20401 
   
-			COMPILE ~TDD/D/PSIDARK1.D~			~override~
+			COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/D/PSIDARK1.D~			~override~
 
-COPY ~TDD/CRE/PSIDARK2.cre~         ~override~
-     ~TDD/CRE/PSIDARK3.cre~         ~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSIDARK2.cre~         ~override~
+     ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSIDARK3.cre~         ~override~
 	SAY NAME1 @20402 
 	SAY NAME2 @20402 
   
-		COMPILE ~TDD/BAF/PSIDARK.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSIDARK.BAF~			~override~
 
-COPY ~TDD/CRE/PSION1.cre~           ~override~
-     ~TDD/CRE/PSION2.cre~           ~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSION1.cre~           ~override~
+     ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSION2.cre~           ~override~
 	SAY NAME1 @20403
 	SAY NAME2 @20403
 
-COPY ~TDD/CRE/PSION3.cre~           ~override~
-     ~TDD/CRE/PSION4.cre~           ~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSION3.cre~           ~override~
+     ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSION4.cre~           ~override~
 	SAY NAME1 @20404 
 	SAY NAME2 @20404 
   
-		COMPILE ~TDD/BAF/PSICUT01.BAF~			~override~
-		COMPILE ~TDD/BAF/PSICUT02.BAF~			~override~
-		COMPILE ~TDD/BAF/PSICUT03.BAF~			~override~
-		COMPILE ~TDD/BAF/PSICUT04.BAF~			~override~
-		COMPILE ~TDD/BAF/PSI1.BAF~			~override~
-		COMPILE ~TDD/BAF/PSION3.BAF~			~override~
-		COMPILE ~TDD/BAF/PSION4.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSICUT01.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSICUT02.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSICUT03.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSICUT04.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSI1.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSION3.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSION4.BAF~			~override~
 	
-			COMPILE ~TDD/D/PSION3.D~			~override~
-			COMPILE ~TDD/D/PSION4.D~			~override~
+			COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/D/PSION3.D~			~override~
+			COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/D/PSION4.D~			~override~
 
 /////////////////////////////////////////////////////////////////////////////	
 
@@ -184,70 +189,70 @@ COPY ~TDD_Hall-of-Knowledge/Tis-EE~			~override~
 
 // DD3603.are
 
-		COMPILE ~TDD/BAF/DD3603.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/DD3603.BAF~			~override~
 
-COPY ~TDD/ARE/DD3603.are~			~override~
-COPY ~TDD/WED/DD3603.wed~			~override~
-COPY ~TDD/MOS/DD3603.mos~			~override~
-COPY ~TDD/MOS/DD3603SR.bmp~			~override~
-COPY ~TDD/MOS/DD3603HT.bmp~			~override~
-COPY ~TDD/MOS/DD3603LM.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3603.are~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3603.wed~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3603.mos~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3603SR.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3603HT.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3603LM.bmp~			~override~
 
-		COMPILE ~TDD/BAF/DD6303.BAF~			~override~ // Used or not used... ?
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/DD6303.BAF~			~override~ // Used or not used... ?
 		
 // DD3602.are
 
-		COMPILE ~TDD/BAF/DD3602.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/DD3602.BAF~			~override~
 
-COPY ~TDD/ARE/DD3602.are~			~override~
-COPY ~TDD/WED/DD3602.wed~			~override~
-COPY ~TDD/MOS/DD3602.mos~			~override~
-COPY ~TDD/MOS/DD3602SR.bmp~			~override~
-COPY ~TDD/MOS/DD3602HT.bmp~			~override~
-COPY ~TDD/MOS/DD3602LM.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3602.are~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3602.wed~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3602.mos~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3602SR.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3602HT.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD3602LM.bmp~			~override~
 		
 // DD1401.are
 
-		COMPILE ~TDD/BAF/DD1401.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/DD1401.BAF~			~override~
 
-COPY ~TDD/ARE/DD1401.are~			~override~
-COPY ~TDD/WED/DD1401.wed~			~override~
-COPY ~TDD/MOS/DD1401.mos~			~override~
-COPY ~TDD/MOS/DD1401SR.bmp~			~override~
-COPY ~TDD/MOS/DD1401HT.bmp~			~override~
-COPY ~TDD/MOS/DD1401LM.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD1401.are~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD1401.wed~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD1401.mos~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD1401SR.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD1401HT.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD1401LM.bmp~			~override~
  
 /////////////////////////////////////////////////////////////////////////////
  
-COPY ~TDD/CRE/PSICERE.cre~          ~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSICERE.cre~          ~override~
 	SAY NAME1 @20400 
 	SAY NAME2 @20400
 
-COPY ~TDD/CRE/PSIWAR1.cre~          ~override~
-     ~TDD/CRE/PSIWAR2.cre~          ~override~
-     ~TDD/CRE/PSIWAR3.cre~          ~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSIWAR1.cre~          ~override~
+     ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSIWAR2.cre~          ~override~
+     ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/PSIWAR3.cre~          ~override~
 	SAY NAME1 @20405
 	SAY NAME2 @20405 
 
-		COMPILE ~TDD/BAF/PSICERE1.BAF~			~override~
-		COMPILE ~TDD/BAF/PSICERE.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSICERE1.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/PSICERE.BAF~			~override~
   
  
 /////////////////////////////////////////////////////////////////////////////
   
-COPY ~TDD/ITM/CEREHAND.itm~         ~TDD-ITM~       
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ITM/CEREHAND.itm~         ~override~       
 	SAY NAME2 @20956
 	SAY 0xde @21032
   
-COPY ~TDD/ITM/DARKHAND.itm~         ~TDD-ITM~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ITM/DARKHAND.itm~         ~override~
 
 
-COPY ~TDD/ITM/KATANACR.itm~         ~TDD-ITM~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ITM/KATANACR.itm~         ~override~
 
 
-COPY ~TDD/ITM/RINGPSI.itm~			~TDD-ITM~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ITM/RINGPSI.itm~			~override~
 
-COPY ~TDD/ITM/DEADBKX.itm~          ~TDD-ITM~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ITM/DEADBKX.itm~          ~override~
   SAY NAME1 @21098
   SAY NAME2 @21099
   SAY DESC @21100
@@ -266,21 +271,21 @@ EXTEND_TOP ~AR0903.BCS~ ~TDD_Hall-of-Knowledge/BAF/tAR0903.BAF~ // Only relevant
 
 // DD5000.are
 
-		COMPILE ~TDD/BAF/DD5000.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/DD5000.BAF~			~override~
 
-COPY ~TDD/ARE/DD5000.are~			~override~
-COPY ~TDD/WED/DD5000.wed~			~override~
-COPY ~TDD/MOS/DD5000.mos~			~override~
-COPY ~TDD/MOS/DD5000SR.bmp~			~override~
-COPY ~TDD/MOS/DD5000HT.bmp~			~override~
-COPY ~TDD/MOS/DD5000LM.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD5000.are~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD5000.wed~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD5000.mos~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD5000SR.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD5000HT.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD5000LM.bmp~			~override~
 	
 // DD0012.are
 
-		COMPILE ~TDD/BAF/DD0012.BAF~			~override~
+		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/DD0012.BAF~			~override~
 
-COPY ~TDD/ARE/DD0012.are~			~override~
-COPY ~TDD/MOS/DD0012.mos~			~override~
-COPY ~TDD/MOS/DD0012SR.bmp~			~override~
-COPY ~TDD/MOS/DD0012HT.bmp~			~override~
-COPY ~TDD/MOS/DD0012LM.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD0012.are~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD0012.mos~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD0012SR.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD0012HT.bmp~			~override~
+COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/ARE/DD0012LM.bmp~			~override~
