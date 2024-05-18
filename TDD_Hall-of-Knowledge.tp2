@@ -179,13 +179,10 @@ COPY ~TDD/CRE/PSION3.cre~           ~override~
 			COMPILE ~TDD/D/PSION4.D~			~override~
 
 /////////////////////////////////////////////////////////////////////////////	
-	///// Voire aussi DD3603 et DD6303
+
+COPY ~TDD_Hall-of-Knowledge/Tis-EE~			~override~
 
 // DD3603.are
-
-		ACTION_IF (NOT DIRECTORY_EXISTS ~weidu_external/TDD_Hall-of-Knowledge/TIZ~) BEGIN
-	MKDIR ~weidu_external/TDD_Hall-of-Knowledge/TIZ~
-		END
 
 		COMPILE ~TDD/BAF/DD3603.BAF~			~override~
 
@@ -195,9 +192,6 @@ COPY ~TDD/MOS/DD3603.mos~			~override~
 COPY ~TDD/MOS/DD3603SR.bmp~			~override~
 COPY ~TDD/MOS/DD3603HT.bmp~			~override~
 COPY ~TDD/MOS/DD3603LM.bmp~			~override~
-
-
-COPY ~TDD/TIZ/DD3603.tiz~			~weidu_external/TDD_Hall-of-Knowledge/TIZ~
 
 		COMPILE ~TDD/BAF/DD6303.BAF~			~override~ // Used or not used... ?
 		
@@ -211,9 +205,6 @@ COPY ~TDD/MOS/DD3602.mos~			~override~
 COPY ~TDD/MOS/DD3602SR.bmp~			~override~
 COPY ~TDD/MOS/DD3602HT.bmp~			~override~
 COPY ~TDD/MOS/DD3602LM.bmp~			~override~
-
-
-COPY ~TDD/TIZ/DD3602.tiz~			~weidu_external/TDD_Hall-of-Knowledge/TIZ~
 		
 // DD1401.are
 
@@ -225,9 +216,6 @@ COPY ~TDD/MOS/DD1401.mos~			~override~
 COPY ~TDD/MOS/DD1401SR.bmp~			~override~
 COPY ~TDD/MOS/DD1401HT.bmp~			~override~
 COPY ~TDD/MOS/DD1401LM.bmp~			~override~
-
-
-COPY ~TDD/TIZ/DD1401.tiz~			~weidu_external/TDD_Hall-of-Knowledge/TIZ~
  
 /////////////////////////////////////////////////////////////////////////////
  
@@ -286,16 +274,6 @@ COPY ~TDD/MOS/DD5000.mos~			~override~
 COPY ~TDD/MOS/DD5000SR.bmp~			~override~
 COPY ~TDD/MOS/DD5000HT.bmp~			~override~
 COPY ~TDD/MOS/DD5000LM.bmp~			~override~
-
-
-COPY ~TDD/TIZ/DD5000.tiz~			~weidu_external/TDD_Hall-of-Knowledge/TIZ~
-
-// Unpack DD5000
-	LAF HANDLE_TILESETS
-		STR_VAR
-		tiz_path = ~weidu_external/TDD_Hall-of-Knowledge/TIZ~
-		tisunpack_path = ~TDD_Hall-of-Knowledge/TOOLS~
-	END	 
 	
 // DD0012.are
 
