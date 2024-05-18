@@ -1,0 +1,308 @@
+BACKUP ~weidu_external/TDD_Hall-of-Knowledge/backup~
+
+SUPPORT ~~
+
+VERSION ~v1.0~
+
+README ~~
+
+
+ALWAYS
+
+    //Copies tra files into the autotra-folder (to leave the originals untouched)
+    DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
+      COPY ~TDD/Language/english~				~weidu_external/TDD_Hall-of-Knowledge/Language/autotra/%LANGUAGE%~
+	  COPY ~TDD/Language/%LANGUAGE%~			~weidu_external/TDD_Hall-of-Knowledge/Language/autotra/%LANGUAGE%~
+    END
+
+    LAF autotra_workaround END
+
+
+//  ACTION_DEFINE_ARRAY fl#noconvert BEGIN END
+
+  ACTION_DEFINE_ARRAY fl#reload BEGIN  tp2 setup END
+
+    LAF HANDLE_CHARSETS
+      INT_VAR
+        infer_charsets = 1
+      STR_VAR
+        tra_path = EVAL ~weidu_external/TDD_Hall-of-Knowledge/Language/autotra~
+		iconv_path = ~TDD_Hall-of-Knowledge/TRA/autotra/iconv~
+//        noconvert_array = fl#noconvert
+        reload_array = fl#reload
+		
+		
+  END
+END
+
+AUTO_TRA ~weidu_external/TDD_Hall-of-Knowledge/Language/autotra/%s~
+
+LANGUAGE ~English~
+         ~English~
+         ~TDD/Language/English/setup.tra~
+         ~TDD/Language/English/tp2.tra~
+
+LANGUAGE ~Russian(aerie-ru)~
+         ~Russian~
+         ~TDD/Language/Russian/setup.tra~
+         ~TDD/Language/Russian/tp2.tra~
+
+LANGUAGE ~Polish(by SoM, part of CoB Clan, in co-operation with TB Team)~
+         ~Polish~
+         ~TDD/Language/Polish/setup.tra~
+         ~TDD/Language/Polish/tp2.tra~
+
+LANGUAGE ~German(Leonardo Watson)~
+         ~German~
+         ~TDD/Language/German/setup.tra~
+         ~TDD/Language/German/tp2.tra~
+
+LANGUAGE ~Francais(Isaya)~
+         ~French~
+         ~TDD/Language/French/setup.tra~
+         ~TDD/Language/French/tp2.tra~
+
+LANGUAGE ~Italian(ilot)~
+         ~Italian~
+         ~TDD/Language/Italian/setup.tra~
+         ~TDD/Language/Italian/tp2.tra~
+         
+LANGUAGE ~Spanish(Clan REO)~
+         ~Spanish~
+         ~TDD/Language/Spanish/setup.tra~
+         ~TDD/Language/Spanish/tp2.tra~
+
+
+BEGIN ~Install that~
+DESIGNATED 0
+LABEL ~TDD-XXXX-XXXX_X~
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~TDDZ.tp2~ 0) ~Require TDDz~	
+
+	 
+/////////////////////////////////////////////////////////////////////////////
+
+// Npc AVAUnis
+
+COPY ~TDD/MOS/AVAUNL.bmp~			~override~
+COPY ~TDD/MOS/AVAUNS.bmp~			~override~
+
+
+		COMPILE ~TDD/BAF/AVAUNIS.BAF~			~override~
+
+COPY ~TDD/CRE/AVAUN9.cre~           ~override~   //override - to catch immediate Kit Pack installation
+     ~TDD/CRE/AVAUN11.cre~          ~override~
+     ~TDD/CRE/AVAUN13.cre~          ~override~
+	SAY NAME1 @20136 
+	SAY NAME2 @20136 
+	SAY 0xa8 @20137 
+	SAY 0xbc @20138  
+	SAY 0xc0 @20139 
+	SAY 0xc4 @20140 
+	SAY 0xc8 @20141 
+	SAY 0xcc @20142 
+	SAY 0xd0 @20143  
+	SAY 0xd4 @20144  
+	SAY 0xd8 @20145  
+	SAY 0xec ~~ [HMTW036]
+	SAY 0xf0 ~~ [HMTW038]
+	SAY 0xf4 @20148  
+	SAY 0x10c @20149 
+	SAY 0x110 @20150 
+	SAY 0x114 @20151 
+	SAY 0x118 @20152  
+	SAY 0x11c @20153  
+	SAY 0x120 @20154 
+	SAY 0x124 @20155  
+	SAY 0x128 @20156 
+	SAY 0x12c @20157 
+	SAY 0x130 @20158 
+	SAY 0x134 @20159  
+	SAY 0x138 @20160 
+	SAY 0x13c @20161 
+	SAY 0x1a0 @20162 
+	SAY 0x1a4 @20163 
+	SAY 0x1ac ~~ [HMTW034]
+	SAY 0x1cc @20165
+  
+			COMPILE ~TDD/D/AVAUNIS.D~			~override~
+			COMPILE ~TDD/D/AVAUNISJ.D~			~override~
+			COMPILE ~TDD/D/AVAUNISP.D~			~override~
+  
+  
+  APPEND ~PDIALOG.2DA~
+~AVAUNIS      AVAUNISP           AVAUNISJ          ***                ***    	      ***    		    ***    		        ***~
+
+/////////////////////////////////////////////////////////////////////////////
+
+COPY ~TDD/CRE/DDHALL01.cre~         ~override~       
+	SAY NAME1 @20247
+	SAY NAME2 @20247 
+
+			COMPILE ~TDD/D/DDHALL01.D~			~override~
+			COMPILE ~TDD/D/DDHALL02.D~			~override~
+			COMPILE ~TDD/D/DDHALL03.D~			~override~
+		COMPILE ~TDD/BAF/DDHALL01.BAF~			~override~
+		COMPILE ~TDD/BAF/DDHALL02.BAF~			~override~
+
+COPY ~TDD/CRE/PSIDARK1.cre~         ~override~
+	SAY NAME1 @20401
+	SAY NAME2 @20401 
+  
+			COMPILE ~TDD/D/PSIDARK1.D~			~override~
+
+COPY ~TDD/CRE/PSIDARK2.cre~         ~override~
+     ~TDD/CRE/PSIDARK3.cre~         ~override~
+	SAY NAME1 @20402 
+	SAY NAME2 @20402 
+  
+		COMPILE ~TDD/BAF/PSIDARK.BAF~			~override~
+
+COPY ~TDD/CRE/PSION1.cre~           ~override~
+     ~TDD/CRE/PSION2.cre~           ~override~
+	SAY NAME1 @20403
+	SAY NAME2 @20403
+
+COPY ~TDD/CRE/PSION3.cre~           ~override~
+     ~TDD/CRE/PSION4.cre~           ~override~
+	SAY NAME1 @20404 
+	SAY NAME2 @20404 
+  
+		COMPILE ~TDD/BAF/PSICUT01.BAF~			~override~
+		COMPILE ~TDD/BAF/PSICUT02.BAF~			~override~
+		COMPILE ~TDD/BAF/PSICUT03.BAF~			~override~
+		COMPILE ~TDD/BAF/PSICUT04.BAF~			~override~
+		COMPILE ~TDD/BAF/PSI1.BAF~			~override~
+		COMPILE ~TDD/BAF/PSION3.BAF~			~override~
+		COMPILE ~TDD/BAF/PSION4.BAF~			~override~
+	
+			COMPILE ~TDD/D/PSION3.D~			~override~
+			COMPILE ~TDD/D/PSION4.D~			~override~
+
+/////////////////////////////////////////////////////////////////////////////	
+	///// Voire aussi DD3603 et DD6303
+
+// DD3603.are
+
+		ACTION_IF (NOT DIRECTORY_EXISTS ~weidu_external/TDD_Hall-of-Knowledge/TIZ~) BEGIN
+	MKDIR ~weidu_external/TDD_Hall-of-Knowledge/TIZ~
+		END
+
+		COMPILE ~TDD/BAF/DD3603.BAF~			~override~
+
+COPY ~TDD/ARE/DD3603.are~			~override~
+COPY ~TDD/WED/DD3603.wed~			~override~
+COPY ~TDD/MOS/DD3603.mos~			~override~
+COPY ~TDD/MOS/DD3603SR.bmp~			~override~
+COPY ~TDD/MOS/DD3603HT.bmp~			~override~
+COPY ~TDD/MOS/DD3603LM.bmp~			~override~
+
+
+COPY ~TDD/TIZ/DD3603.tiz~			~weidu_external/TDD_Hall-of-Knowledge/TIZ~
+
+		COMPILE ~TDD/BAF/DD6303.BAF~			~override~ // Used or not used... ?
+		
+// DD3602.are
+
+		COMPILE ~TDD/BAF/DD3602.BAF~			~override~
+
+COPY ~TDD/ARE/DD3602.are~			~override~
+COPY ~TDD/WED/DD3602.wed~			~override~
+COPY ~TDD/MOS/DD3602.mos~			~override~
+COPY ~TDD/MOS/DD3602SR.bmp~			~override~
+COPY ~TDD/MOS/DD3602HT.bmp~			~override~
+COPY ~TDD/MOS/DD3602LM.bmp~			~override~
+
+
+COPY ~TDD/TIZ/DD3602.tiz~			~weidu_external/TDD_Hall-of-Knowledge/TIZ~
+		
+// DD1401.are
+
+		COMPILE ~TDD/BAF/DD1401.BAF~			~override~
+
+COPY ~TDD/ARE/DD1401.are~			~override~
+COPY ~TDD/WED/DD1401.wed~			~override~
+COPY ~TDD/MOS/DD1401.mos~			~override~
+COPY ~TDD/MOS/DD1401SR.bmp~			~override~
+COPY ~TDD/MOS/DD1401HT.bmp~			~override~
+COPY ~TDD/MOS/DD1401LM.bmp~			~override~
+
+
+COPY ~TDD/TIZ/DD1401.tiz~			~weidu_external/TDD_Hall-of-Knowledge/TIZ~
+ 
+/////////////////////////////////////////////////////////////////////////////
+ 
+COPY ~TDD/CRE/PSICERE.cre~          ~override~
+	SAY NAME1 @20400 
+	SAY NAME2 @20400
+
+COPY ~TDD/CRE/PSIWAR1.cre~          ~override~
+     ~TDD/CRE/PSIWAR2.cre~          ~override~
+     ~TDD/CRE/PSIWAR3.cre~          ~override~
+	SAY NAME1 @20405
+	SAY NAME2 @20405 
+
+		COMPILE ~TDD/BAF/PSICERE1.BAF~			~override~
+		COMPILE ~TDD/BAF/PSICERE.BAF~			~override~
+  
+ 
+/////////////////////////////////////////////////////////////////////////////
+  
+COPY ~TDD/ITM/CEREHAND.itm~         ~TDD-ITM~       
+	SAY NAME2 @20956
+	SAY 0xde @21032
+  
+COPY ~TDD/ITM/DARKHAND.itm~         ~TDD-ITM~
+
+
+COPY ~TDD/ITM/KATANACR.itm~         ~TDD-ITM~
+
+
+COPY ~TDD/ITM/RINGPSI.itm~			~TDD-ITM~
+
+COPY ~TDD/ITM/DEADBKX.itm~          ~TDD-ITM~
+  SAY NAME1 @21098
+  SAY NAME2 @21099
+  SAY DESC @21100
+  SAY 0xae @21101
+
+
+// Only partial scripts are needed for these two areas
+
+EXTEND_TOP    ~AR0020.BCS~ ~TDD_Hall-of-Knowledge/BAF/tAR0020.BAF~ // Only one block of original tAR0020.BAF for DDHALL01.cre
+
+EXTEND_TOP ~AR0903.BCS~ ~TDD_Hall-of-Knowledge/BAF/tAR0903.BAF~ // Only relevant blocks of original tAR0903.BAF for AVAUNIS npc
+
+/////////////////////////////////////////////////////////////////////////////
+
+////////// Maison de la connaissance
+
+// DD5000.are
+
+		COMPILE ~TDD/BAF/DD5000.BAF~			~override~
+
+COPY ~TDD/ARE/DD5000.are~			~override~
+COPY ~TDD/WED/DD5000.wed~			~override~
+COPY ~TDD/MOS/DD5000.mos~			~override~
+COPY ~TDD/MOS/DD5000SR.bmp~			~override~
+COPY ~TDD/MOS/DD5000HT.bmp~			~override~
+COPY ~TDD/MOS/DD5000LM.bmp~			~override~
+
+
+COPY ~TDD/TIZ/DD5000.tiz~			~weidu_external/TDD_Hall-of-Knowledge/TIZ~
+
+// Unpack DD5000
+	LAF HANDLE_TILESETS
+		STR_VAR
+		tiz_path = ~weidu_external/TDD_Hall-of-Knowledge/TIZ~
+		tisunpack_path = ~TDD_Hall-of-Knowledge/TOOLS~
+	END	 
+	
+// DD0012.are
+
+		COMPILE ~TDD/BAF/DD0012.BAF~			~override~
+
+COPY ~TDD/ARE/DD0012.are~			~override~
+COPY ~TDD/MOS/DD0012.mos~			~override~
+COPY ~TDD/MOS/DD0012SR.bmp~			~override~
+COPY ~TDD/MOS/DD0012HT.bmp~			~override~
+COPY ~TDD/MOS/DD0012LM.bmp~			~override~
