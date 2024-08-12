@@ -45,7 +45,7 @@ ALWAYS
 
 //  ACTION_DEFINE_ARRAY fl#noconvert BEGIN END
 
-  ACTION_DEFINE_ARRAY fl#reload BEGIN  tp2 setup END
+  ACTION_DEFINE_ARRAY fl#reload BEGIN tp2 setup END
 
     LAF HANDLE_CHARSETS
       INT_VAR
