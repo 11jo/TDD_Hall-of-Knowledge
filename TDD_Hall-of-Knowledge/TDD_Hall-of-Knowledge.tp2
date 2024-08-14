@@ -116,6 +116,12 @@ COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/Portrait/AVAUNS.bmp~			~override
 
 		COMPILE ~weidu_external/TDD_Hall-of-Knowledge/DATA/D~			~override~
 
+// Special correction for joigning dialog not working after quest completed
+COMPILE	~TDD_Hall-of-Knowledge/D/JOAVAUNISP.D~			~override~
+USING ~weidu_external/TDD_Hall-of-Knowledge/Language/autotra/%s/AVAUNISP.tra~
+COMPILE	~TDD_Hall-of-Knowledge/D/JOAVAUNISPBIS.D~			~override~
+USING ~weidu_external/TDD_Hall-of-Knowledge/Language/autotra/%s/AVAUNISJ.tra~
+
 COPY ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/AVAUN9.cre~           ~override~   //override - to catch immediate Kit Pack installation
      ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/AVAUN11.cre~          ~override~
      ~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/AVAUN13.cre~          ~override~

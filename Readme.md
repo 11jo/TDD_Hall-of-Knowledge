@@ -14,6 +14,8 @@ This mod use official TDD ressources not implemented by TDDz :
 
 It add a little NPC Avaunis (no banter) at the Order of The Radiant Heart who will lead you to the Hall of Knowledge mini quest.
 
+Hint : After talking to Avaunis and accept the quest go to the city gate.
+
 ## Install:
 --------
 

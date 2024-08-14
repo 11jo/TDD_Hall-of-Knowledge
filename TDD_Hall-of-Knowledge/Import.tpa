@@ -11,13 +11,19 @@ COPY ~TDD/MOS/AVAUNS.bmp~			~weidu_external/TDD_Hall-of-Knowledge/DATA/Portrait/
 
 
 COPY ~TDD/BAF/AVAUNIS.BAF~			~weidu_external/TDD_Hall-of-Knowledge/DATA/BAF/AVAUNIS.BAF~
+//REPLACE_TEXTUALLY ~Global("DDAvStay","LOCALS",0)~ ~Global("DDAvStay","GLOBAL",0)~
+//REPLACE_TEXTUALLY ~AreaCheck("DD5000")~ ~AreaCheck("DD5000") !AreaCheck("AR0903")~
 
 COPY ~TDD/CRE/AVAUN9.cre~			~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/AVAUN9.cre~
      ~TDD/CRE/AVAUN11.cre~			~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/AVAUN11.cre~
      ~TDD/CRE/AVAUN13.cre~			~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/AVAUN13.cre~
   
 COPY ~TDD/D/AVAUNIS.D~			~weidu_external/TDD_Hall-of-Knowledge/DATA/D/AVAUNIS.D~
+REPLACE_TEXTUALLY ~JoinParty()~ ~RevealAreaOnMap("DD5000") JoinParty()~
 COPY ~TDD/D/AVAUNISJ.D~			~weidu_external/TDD_Hall-of-Knowledge/DATA/D/AVAUNISJ.D~
+REPLACE_TEXTUALLY ~EscapeAreaMove("AR0903",820,118,1)~ ~SetGlobal("IWasKickedOut","LOCALS",1) EscapeAreaMove("AR0903",760,800,1)~
+//REPLACE_TEXTUALLY ~Global("DDAvStay","LOCALS",0)~ ~Global("DDAvStay","GLOBAL",0)~
+//REPLACE_TEXTUALLY ~SetGlobal("DDAvStay","LOCALS",1)~ ~SetGlobal("DDAvStay","GLOBAL",1)~
 COPY ~TDD/D/AVAUNISP.D~			~weidu_external/TDD_Hall-of-Knowledge/DATA/D/AVAUNISP.D~
 
 COPY ~TDD/CRE/DDHALL01.cre~			~weidu_external/TDD_Hall-of-Knowledge/DATA/CRE/DDHALL01.cre~
